@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor Showroom - Tractors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://plus.unsplash.com/premium_photo-1661962949590-1c248a9bbe6c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header {
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .logo img {
+            height: 70px;
+            margin-right: 10px;
+        }
+        .company-name {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        nav {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tractor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tractor {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s forwards;
+        }
+        .tractor:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .tractor img {
+            max-width: 200px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+        .tractor:hover img {
+            transform: scale(1.1);
+        }
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            opacity: 90;
+            animation: fadeIn 0.1s forwards;
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .tractor a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1620632523414-054c7bea12ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Company Logo">
+            <span class="company-name">Halland Tractors</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tractors.html">Tractors</a>
+            <a href="main.php">Book Your tractor</a>
+            <a href="about.html">About us</a>
+            <a href="aboutme.html">About me</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Our Tractors</h2>
+        <div class="tractor-grid">
+            <div class="tractor">
+                <a href="Tractor1.html">
+                    <img src="https://images.unsplash.com/photo-1695999939271-8e2ab5018b6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 1">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 1
+                        </h3>
+                        <p>Powerful and reliable, suitable for all kinds of farming needs.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor2.html">
+                    <img src="https://plus.unsplash.com/premium_photo-1664301163726-78773dc77bfd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 2">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 2</h3>
+                        <p>Efficient and robust, ideal for extensive agricultural tasks.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor3.html">
+                    <img src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?q=80&w=1782&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 3">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 3</h3>
+                        <p>Compact and versatile, perfect for small to medium-sized farms.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor4.html">
+                    <img src="https://images.unsplash.com/photo-1568680870491-590cd4e224ab?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 4">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 4</h3>
+                        <p>Reliable and durable, built to handle tough farming conditions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor5.html">
+                    <img src="https://plus.unsplash.com/premium_photo-1661812376426-26e7af23fab5?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 5">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 5</h3>
+                        <p>High-performance machinery designed for maximum productivity.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor6.html">
+                    <img src="https://images.unsplash.com/photo-1620388875487-d0fe06b9994a?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 6">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 6</h3>
+                        <p>Versatile and efficient, suitable for various agricultural tasks.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor7.html">
+                    <img src="https://images.unsplash.com/photo-1566781002991-9f3ef739309b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 7">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 7</h3>
+                        <p>Compact design with powerful performance, perfect for small farms.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor8.html">
+                    <img src="https://plus.unsplash.com/premium_photo-1661811122652-ee45d7d107ff?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 8">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 8</h3>
+                        <p>Advanced technology for precision farming and increased efficiency.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor9.html">
+                    <img src="https://images.unsplash.com/photo-1594691592772-4427be1ea26c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 9">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 9</h3>
+                        <p>Robust construction for long-lasting performance in tough conditions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tractor">
+                <a href="Tractor10.html">
+                    <img src="https://images.unsplash.com/photo-1618337014515-1175efa61994?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tractor 10">
+                    <div class="tractor-info">
+                        <h3>Tractor Model 10</h3>
+                        <p>State-of-the-art features for enhanced productivity and comfort.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+

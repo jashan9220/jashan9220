@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor Showroom - About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1530267981375-f0de937f5f13?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 140px auto 40px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #f5f5f5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .about-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.2rem;
+        }
+        .about-info i {
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tractors.html">Tractors</a>
+        <a href="main.php">Book Your tractor</a>
+        <a href="about.html">About us</a>
+        <a href="aboutme.html">About me</a>
+    </nav>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-info">
+                <p>We are a leading provider of high-quality tractors, dedicated to meeting the needs of farmers worldwide. Our mission is to offer the best equipment and service to support agricultural growth and sustainability.</p>
+                <p>Founded in 2024, Halland Tractors is a newly established company that specializes in manufacturing cutting-edge tractors. Our showroom is committed to delivering top-notch tractors and exceptional customer service.</p>
+            </div>
+            <h2>Our History</h2>
+            <div class="about-info">
+                <p>In 2024, our founders saw the need for reliable and efficient agricultural machinery to support farmers. They established Halland Tractors with a vision to revolutionize the agricultural industry by providing a platform where farmers could easily access high-quality tractors from the comfort of their homes.</p>
+                <p>Our journey began with just a small team of dedicated professionals who were passionate about farming and technology. Despite the challenges, we quickly gained a reputation for our exceptional customer service and quality products.</p>
+                <p>By 2025, we will expand our product line to include a wide range of tractors and farming equipment, catering to various agricultural needs. Our commitment to innovation and sustainability drove us to continually improve our offerings and introduce advanced technologies in our machinery.</p>
+                <p>In 2026, we planned to launch our state-of-the-art customer support system, ensuring that our clients received the best possible assistance and after-sales service. This move solidified our position as a trusted name in the agricultural community.</p>
+                <p>Today, we are proud to serve thousands of farmers across the globe. Our dedication to quality, innovation, and customer satisfaction remains at the core of our business, and we continue to strive for excellence in everything we do.</p>
+           <p>                                                     JASHANPREET SINGH</p>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

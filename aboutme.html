@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Online Tractor Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    header {
+        background: url('https://images.unsplash.com/photo-1530267981375-f0de937f5f13?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+    }
+    nav a {
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
+    .container {
+        padding: 20px;
+    }
+    .about-me {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+    .about-me h2 {
+        text-align: center;
+    }
+    .about-me img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .about-me section {
+        margin: 20px 0;
+    }
+    .about-me .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .about-me .contact-form label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    .about-me .contact-form input,
+    .about-me .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .about-me .contact-form button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .about-me .contact-form button:hover {
+        background-color: #555;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    </style>
+    <header>
+        <h1>About Me</h1>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tractors.html">Tractors</a>
+            <a href="main.php">Book Your tractor</a>
+            <a href="about.html">About us</a>
+            <a href="aboutme.html">About me</a>
+        </nav>
+    <div class="container">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <section>
+                <h3>Introduction</h3>
+                <p>Hello! I'm Jashanpreet Singh, the creator of this online tractor showroom. I'm passionate about web development and agriculture technology.</p>
+            </section>
+            <section>
+                <h3>Background</h3>
+                <p>I hold a Bachelor's degree in Computer Science from Northern College and have completed several web development courses on platforms like Coursera and Udemy.</p>
+            </section>
+            <section>
+                <h3>Skills</h3>
+                <p>I am proficient in HTML, CSS, JavaScript, and have experience with frameworks like React and Angular. Additionally, I have skills in backend development using Node.js and databases like MongoDB.</p>
+            </section>
+            <section>
+                <h3>Projects</h3>
+                <ul>
+                    <li>Online Tractor Showroom (this website)</li>
+                    <li>Personal Portfolio Website</li>
+                    <li>E-commerce Platform for Farm Equipment</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contact Information</h3>
+                <div class="contact-form">
+                    <form action="mailto:john.doe@example.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Tractor Showroom. All rights reserved.</p>
+    </footer>
+</body>
+</html>

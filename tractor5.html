@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halland T9 - Description</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .tractor-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tractor-info {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .buy-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .buy-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #0056b3;
+        }
+        .buy-btn i {
+            margin-right: 5px;
+        }
+        .buy-form {
+            display: none;
+            margin-top: 20px;
+        }
+        .form-control {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Halland T9 - Description</h1>
+        <img src="https://plus.unsplash.com/premium_photo-1661812376426-26e7af23fab5?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Halland T9" class="tractor-image">
+        <div class="tractor-info">
+            <h2>ENGINE</h2>
+            <p>
+                The Halland T9 tractor is equipped with a powerful and fuel-efficient engine designed to deliver exceptional performance and reliability in the field. With advanced technology and innovative engineering, the T9 ensures maximum productivity and minimum downtime.
+            </p>
+            <h2>TRANSMISSIONS</h2>
+            <p>
+                The Halland T9 features a range of transmission options to suit different farming applications and operator preferences. Whether it's a manual gearbox for precise control or an automatic transmission for effortless operation, the T9 provides flexibility and efficiency.
+            </p>
+            <h2>MAINTENANCE</h2>
+            <p>
+                Maintenance of the Halland T9 is simplified to minimize downtime and maximize uptime. With easy access to service points and long service intervals, the T9 ensures consistent performance and reliability throughout its lifespan, reducing overall operating costs for farmers.
+            </p>
+        </div>
+        <div class="buy-options">
+            <div>
+                <h3>Price: $70,000</h3>
+                <p>Get your Halland T9 tractor today! Click below to buy:</p>
+                <button class="buy-btn" onclick="toggleBuyForm()"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+            <div class="buy-form">
+                <form id="purchase-form">
+                    <input type="text" class="form-control" placeholder="Full Name" required><br>
+                    <input type="text" class="form-control" placeholder="Contact Number" required><br>
+                    <input type="text" class="form-control" placeholder="Address" required><br>
+                    <textarea class="form-control" placeholder="Additional Comments"></textarea><br>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <p
+                id="submission-message" style="display: none;">Your application has been submitted!</p>
+</div>
+</div>
+</div>
+<a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\tractors.html" style="position: fixed; top: 20px; left: 20px; background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;"><i class="fas fa-arrow-left"></i> Back</a>
+<script>
+function toggleBuyForm() {
+const form = document.querySelector('.buy-form');
+form.style.display = form.style.display === 'none' ? 'block' : 'none';
+}
+document.getElementById('purchase-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const submissionMessage = document.getElementById('submission-message');
+        submissionMessage.style.display = 'block';
+    });
+</script>
+</body>
+</html>
+

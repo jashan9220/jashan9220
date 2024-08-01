@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halland T13 - Description</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .tractor-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tractor-info {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .buy-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .buy-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #0056b3;
+        }
+        .buy-btn i {
+            margin-right: 5px;
+        }
+        .buy-form {
+            display: none;
+            margin-top: 20px;
+        }
+        .form-control {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Halland T13 - Description</h1>
+        <img src="https://images.unsplash.com/photo-1594691592772-4427be1ea26c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Halland T13" class="tractor-image">
+        <div class="tractor-info">
+            <h2>ENGINE</h2>
+            <p>
+                The Halland T13 tractor is equipped with a powerful engine that delivers superior performance and efficiency. Its robust construction and advanced technology ensure reliable operation in various farming applications.
+            </p>
+            <h2>TRANSMISSIONS</h2>
+            <p>
+                With a range of transmission options, the Halland T13 provides versatile solutions for different agricultural tasks. Whether you need precise control for fieldwork or smooth operation for transport, the T13 delivers exceptional performance and versatility.
+            </p>
+            <h2>MAINTENANCE</h2>
+            <p>
+                Maintenance of the Halland T13 is straightforward, thanks to its accessible service points and long service intervals. Spend more time working in the field and less time on maintenance with the T13 tractor.
+            </p>
+        </div>
+        <div class="buy-options">
+            <div>
+                <h3>Price: $60,000</h3>
+                <p>Get your powerful Halland T13 tractor today! Click below to buy:</p>
+                <button class="buy-btn" onclick="toggleBuyForm()"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+            <div class="buy-form" style="display: none;">
+                <form id="purchase-form">
+                    <input type="text" class="form-control" placeholder="Full Name" required><br>
+                    <input type="text" class="form-control" placeholder="Contact Number" required><br>
+                    <input type="text" class="form-control" placeholder="Address" required><br>
+                    <textarea class="form-control" placeholder="Additional Comments"></textarea><br>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <p id="submission-message" style="display: none;">Your application has been submitted!</p>
+            </div>
+        </div>
+        
+    </div>
+    <a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\tractors.html" style="position: fixed; top: 20px; left: 20px; background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;"><i class="fas fa-arrow-left"></i> Back</a>
+
+    <script>
+        function toggleBuyForm() {
+            const form = document.querySelector('.buy-form');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        document.getElementById('purchase-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const submissionMessage = document.getElementById('submission-message');
+            submissionMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

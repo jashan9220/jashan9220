@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor Showroom - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://plus.unsplash.com/premium_photo-1661962949590-1c248a9bbe6c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header {
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .logo img {
+            height: 70px;
+            margin-right: 10px;
+        }
+        .company-name {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        nav {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        section {
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1620632523414-054c7bea12ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Company Logo">
+            <span class="company-name">Halland Tractors</span>
+        </div>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="tractors.html">Tractors</a>
+                <a href="main.php">Book Your tractor</a>
+                <a href="about.html">About us</a>
+                <a href="aboutme.html">About me</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to the Halland Tractors </h2>
+            <p>Discover the latest and greatest in agricultural technology. From small-scale farming to large agricultural enterprises, we provide a wide range of top-quality tractors to suit your needs.</p>
+            <p>Explore our collection to find the perfect tactor that will help you streamline your operations and increase productivity. Our tractors are engineered for performance, durability, and efficiency, ensuring that you get the most out of every acre.</p>
+            <p>Join the revolution in modern agriculture with our cutting-edge tractors. Experience the difference with Halland Tractors today!</p>
+        </section>
+   
+</body>
+</html>
